@@ -1,0 +1,14 @@
+{
+    "name": "css-grid",
+    "version": "1.0.0",
+    "description": "css grid ",
+    "main": "index.js",
+    "author": "ian khor",
+    "license": "MIT",
+    "dependencies": {
+        "browser-sync": "^2.26.3"
+    },
+    "scripts": {
+        "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js !node_modules/**/*', --directory --port 7777 --browser google chrome"
+    }
+}

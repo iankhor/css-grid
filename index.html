@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="nav">Nav</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content-1">Short content 1</div>
+        <div class="content-2">
+            Labore laborum eu esse consequat sit deserunt duis non id consectetur. Ea ut id proident amet pariatur incididunt. Sit enim ad aute fugiat exercitation proident nostrud tempor officia duis excepteur magna. Esse sit enim do cillum tempor velit. In reprehenderit
+            reprehenderit ipsum eiusmod laborum consequat magna ut culpa laborum excepteur nisi nostrud consectetur. Velit excepteur quis ea commodo id aute officia cupidatat aliquip id id irure irure cupidatat. Nulla sint fugiat ipsum occaecat labore
+            culpa ullamco velit dolor veniam. Laborum exercitation ullamco ut proident ex. Cupidatat cupidatat minim quis nisi aliqua eiusmod do laboris cillum ea minim amet esse. Culpa excepteur ipsum consequat occaecat laborum duis proident ex. Amet
+            ad non deserunt in fugiat laboris Lorem anim tempor reprehenderit esse. Tempor aliqua commodo amet magna sit deserunt magna incididunt officia aute. Veniam nulla consectetur velit dolore nostrud sunt duis et ea commodo culpa incididunt excepteur
+            deserunt. Nulla qui anim anim incididunt et reprehenderit ex culpa veniam nostrud. Occaecat tempor nisi ea tempor est sit nostrud incididunt voluptate ullamco do. Id consequat laboris est nisi et. Et excepteur dolore dolore et excepteur duis
+            fugiat.
+        </div>
+        <div class="content-3">
+            Non eiusmod occaecat labore labore fugiat in excepteur id consectetur. Est dolore proident culpa ea ut anim adipisicing reprehenderit tempor. Id voluptate est sint id labore ex. Consectetur laboris qui sunt sunt do quis irure commodo eu id reprehenderit
+            id. Aliqua dolor minim cupidatat culpa deserunt nulla cillum mollit ea qui. Incididunt esse esse cupidatat exercitation nostrud. Pariatur voluptate aliquip laborum tempor ut culpa laborum voluptate est. Sit dolor sint consequat et do aliquip
+            voluptate et. Lorem anim aute ullamco tempor exercitation est proident eiusmod id adipisicing fugiat occaecat aliqua occaecat. Veniam do nisi qui cillum laborum aute. Ipsum quis ullamco esse fugiat officia minim incididunt ad nostrud velit
+            veniam nulla veniam excepteur. Culpa in quis ullamco dolor. Magna excepteur nulla reprehenderit magna sit id. Incididunt aliqua ipsum ad magna culpa pariatur elit voluptate Lorem consequat eu ipsum ea quis. Adipisicing cupidatat velit ullamco
+            nostrud incididunt velit duis non aliquip laboris fugiat. Culpa nulla qui amet do elit magna sint velit do aliqua minim. Ad mollit anim consectetur fugiat eu labore ullamco sunt tempor amet incididunt. Officia minim adipisicing proident adipisicing
+            sunt aute anim eu exercitation commodo minim. Veniam exercitation laboris velit reprehenderit ipsum cillum Lorem. Incididunt commodo consectetur elit amet ex dolore anim laboris culpa. Est irure ipsum adipisicing culpa dolore.
+        </div>
+        <div class="footer">footer</div>
+    </div>
+
+    <style>
+        html {
+            font-size: 10px;
+        }
+        
+        body {
+            margin: 0 auto;
+        }
+        
+        .container {
+            display: grid;
+            border: lightsteelblue solid 0.5rem;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 10vh 10vh;
+            height: 100vh
+        }
+        
+        .header {
+            background-color: yellow;
+            grid-column: 1 / -1;
+        }
+        
+        .sidebar {
+            background-color: aquamarine;
+            grid-row: span 3;
+        }
+        
+        .nav {
+            background-color: brown;
+            grid-column: 1 / -1;
+        }
+        
+        .content-1 {
+            background-color: darkturquoise;
+            grid-column: 2 / -1;
+        }
+        
+        .content-2 {
+            background-color: lightsalmon;
+            grid-column: 2 / -1;
+        }
+        
+        .content-3 {
+            background-color: darkgoldenrod;
+            grid-column: 2 / -1;
+        }
+        
+        .footer {
+            background-color: blueviolet;
+            grid-column: 1 / -1;
+        }
+    </style>
+</body>
+
+</html>
